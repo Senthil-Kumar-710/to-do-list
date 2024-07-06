@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WORK TO-DOs</h1>
+        <p style="color: rgb(255, 0, 0);">Enter text into the input field to add items to your list</p>
+        <p style="color: green;">Click the item to mark it as complete</p>
+        <p style="color: rgb(0, 17, 255);">Click the "X" to remove the item from your list</p>
+        <input type="text" id="new-task-title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" placeholder="New task">
+        <textarea id="new-task-desc" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" placeholder="Task description"></textarea>
+        <button id="add-task-btn">Add Task</button>
+        
+        <div id="filters">
+            <button data-filter="all">All Tasks</button>
+            <button data-filter="completed">Completed Tasks</button>
+            <button data-filter="incomplete">Incomplete Tasks</button>
+            <button id="fetch-tasks-btn">Fetch Tasks</button>
+        </div>
+        
+        <ul id="task-list"></ul>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

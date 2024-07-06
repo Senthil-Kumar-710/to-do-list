@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/29/01/40/abstract-1779625_640.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.1px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item.complete {
+    text-decoration: line-through;
+}
+
+.task-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.task-item button.complete-btn {
+    color: #00ff00;
+}
